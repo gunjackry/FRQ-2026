@@ -1,0 +1,255 @@
+.frq-p1-v1 {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.frq-p1-v1__actions {
+  margin: 1rem 0;
+}
+
+.frq-p1-v1 button {
+  background: #0a4b78;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.frq-p1-v1__notice {
+  margin: 0.8rem 0;
+  padding: 0.6rem;
+  background: #f2f7ff;
+  border: 1px solid #d6e6ff;
+  border-radius: 6px;
+}
+
+.frq-p1-v1__quest {
+  margin: 0.8rem 0;
+  padding: 0.8rem;
+  border: 1px solid #d6e6ff;
+  background: #f8fbff;
+  border-radius: 8px;
+}
+
+.frq-p1-v1__quest-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.frq-p1-v1__quest-percent {
+  font-weight: 700;
+  color: #0a4b78;
+}
+
+.frq-p1-v1__quest-bar {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: #dde8f4;
+  overflow: hidden;
+}
+
+.frq-p1-v1__quest-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #0a4b78, #1695d1);
+  transition: width 180ms ease;
+}
+
+.frq-p1-v1__milestones {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.frq-milestone {
+  border: 1px solid #c9d8ea;
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.8rem;
+  background: #fff;
+}
+
+.frq-milestone.is-done {
+  border-color: #9bc9b2;
+  background: #e8f8ee;
+  color: #1f6b41;
+}
+
+.frq-score-card-btn {
+  margin-top: 0.6rem;
+  background: #17324d !important;
+  font-weight: 600;
+}
+
+.frq-p1-v1__layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.frq-p1-v1__tree-pane,
+.frq-p1-v1__editor-pane {
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  background: #f9fafb;
+  padding: 0.8rem;
+}
+
+.frq-tree-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0.6rem 0;
+  flex-wrap: wrap;
+}
+
+.frq-tree-connectors {
+  height: 18px;
+  border-top: 2px solid #8fa3b7;
+  margin: 0.2rem 20%;
+}
+
+.frq-tree-connectors--short {
+  margin: 0.2rem 35%;
+}
+
+.frq-node {
+  background: #fff;
+  color: #1f2d3d;
+  border: 1px solid #9aa7b4;
+  min-width: 160px;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.frq-node.is-selected {
+  border: 2px solid #0a4b78;
+  box-shadow: 0 0 0 2px #dbe8f4;
+}
+
+.frq-node__title {
+  display: block;
+  font-weight: 600;
+}
+
+.frq-node__status {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  color: #4b6b88;
+}
+
+.frq-tree-extra {
+  margin-top: 0.8rem;
+}
+
+.frq-tree-extra-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.frq-editor-card label,
+.frq-p1-v1__section label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.frq-editor-card input,
+.frq-editor-card select,
+.frq-p1-v1__section input,
+.frq-p1-v1__section textarea {
+  width: 100%;
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+}
+
+.frq-checkbox {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.frq-checkbox input {
+  width: auto;
+}
+
+.frq-p1-v1__status.error {
+  color: #a10000;
+}
+
+.frq-help {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.frq-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .frq-p1-v1__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.frq-unlock-score {
+  margin: 0.2rem 0 0.8rem;
+  padding: 0.45rem 0.6rem;
+  background: #eef6ff;
+  border: 1px solid #cfe2f6;
+  border-radius: 6px;
+}
+
+.frq-editor-section {
+  margin-top: 0.9rem;
+  padding-top: 0.7rem;
+  border-top: 1px dashed #c7d2de;
+}
+
+.frq-chip-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.4rem;
+}
+
+.frq-chip-actions button {
+  background: #edf4fb;
+  color: #0a4b78;
+  border: 1px solid #b9d1ea;
+}
+
+.frq-reveal {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-4px);
+  transition: all 180ms ease;
+}
+
+.frq-reveal.is-visible {
+  max-height: 100px;
+  opacity: 1;
+  transform: translateY(0);
+}
